@@ -58,7 +58,9 @@ def createAPI(modelName):
         return jsonify({"result": label, "confidence": float(pred)})
 
 
-createAPI("rnn") # dosya içersinde var olan modelin adı girilerek bir api method Post oluşturulur. elimizde çokça model olduğundan ve sadece her Post işeleminde kullanılan modeller değişecegi için böyle bir fonksiyon yapısı kullanmak daha kolaydır
+# dosya içersinde var olan modelin adı girilerek bir api method Post oluşturulur. 
+# elimizde çokça model olduğundan ve sadece her Post işeleminde kullanılan modeller değişecegi için böyle bir fonksiyon yapısı kullanmak daha kolaydır
+createAPI("rnn") 
 
 
 if __name__ == "__main__":
